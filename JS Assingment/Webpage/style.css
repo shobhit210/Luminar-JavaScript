@@ -1,0 +1,311 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+.first{
+    background-image: url(road.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+    margin-top: 0%;
+}
+
+.navbar{
+    background-color: rgba(255, 255, 255, 0.63);
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    top: 0px;
+}
+
+.leftmenu{
+    width: 25%;
+    float: left;
+    /* background-color: teal; */
+    line-height: 80px;
+}
+
+.leftmenu h3{
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    margin-left: 30px;
+    font-size: 25px;
+    font-weight: bold;
+    color: black;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.rightmenu{
+    width: 70%;
+    float: right;
+    /* background-color: rgb(36, 128, 0); */
+    line-height: 80px;
+}
+
+.rightmenu ul li{
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    display: inline-block;
+    list-style: none;
+    text-transform: capitalize;
+    color: black;
+    padding-left: 20px;
+    letter-spacing: 2px;
+}
+
+.rightmenu ul li:hover{
+    color: orange;
+}
+
+#home{
+    color: orange;
+}
+
+.rightmenu ul{
+    padding-left: 200px;
+}
+
+.text{
+    /* margin-top: 100px; */
+    padding-top: 240px;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Libre Baskerville', serif;
+}
+
+.text h4{
+    font-size: 30px;
+    color: black;
+    letter-spacing: 2px;
+}
+
+.text h2{
+    color: white;
+    font-size: 50px;
+    padding: 20px 20px;
+    letter-spacing: 6px;
+    font-weight: bold;
+}
+
+.text h3{
+    font-size: 25px;
+    color: black;
+    letter-spacing: 3px;
+}
+
+#b1{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Libre Baskerville', serif;
+    background-color: white;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: 5px solid white;
+    margin-top: 20px;
+    margin-right: 10px;
+    color: black;
+}
+
+#b2{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Libre Baskerville', serif;
+    background-color: transparent;
+    padding: 10px 20px;
+    font-weight: bold;
+    border: 5px solid white;
+    margin-top: 20px;
+    margin-right: 10px;
+    color: white;
+}
+
+.second{
+    background-image: url(mountain.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 100%;
+}
+
+.secondheading{
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Libre Baskerville', serif;
+    font-size: 40px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: white;
+}
+
+.secondlist{
+    width: 45%;
+    background-color: tomato;
+    height: 400px;
+    float: left;
+    padding-left: 30px;
+}
+
+.secondlist ul li{
+    color: white;
+    text-transform: initial;
+    font-family: 'Libre Baskerville', serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    font-size: 30px;
+    list-style: none;
+}
+
+.thirdlist{
+    width: 45%;
+    background-color: tomato;
+    height: 400px;
+    float: right;
+    padding-left: 30px;
+}
+
+.thirdlist ul li{
+    color: white;
+    text-transform: initial;
+    font-family: 'Libre Baskerville', serif;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    font-size: 30px;
+    list-style: none;
+}
+
+.third{
+    background-image: url(car.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: 100%, 100%;
+}
+
+.places h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: rgb(0, 0, 0);
+    font-size: 60px;
+    font-family: 'Libre Baskerville', serif;
+    padding-top: 30px;
+    padding-bottom: 40px;
+    letter-spacing: 3px;
+}
+
+.northindia{
+    background-color: white;
+    width: 35%;
+    height: 70vh;
+    float: left;
+    margin-left: 100px;
+    border-radius: 20px;
+    }
+
+.northindia h3{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+
+.northindia ol li{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 25px;
+    margin-left: 110px;
+    line-height: 60px;
+    text-align: left;
+}
+
+.southindia{
+    background-color: white;
+    width: 35%;
+    height: 70vh;
+    float: right;
+    margin-right: 100px;
+    border-radius: 20px;
+}
+
+.southindia h3{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: underline;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    }
+
+.southindia ol li{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 25px;
+    margin-left: 70px;
+    line-height: 60px;
+    text-align: left;
+}
+
+.forth{
+    background-image: url(dino.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: 100% 130%;
+}
+
+.booknow{
+    width: 45%;
+    height: 55vh;
+    background-color: rgba(255, 255, 255, 0.568);
+    float: right;
+    font-family: 'Libre Baskerville', serif;
+    text-align: center;
+    margin-top: 25vh;
+    margin-right: 150px;
+    border-radius: 15px;
+}
+
+.booknow h3{
+    color: black;
+    font-size: 40px;
+    letter-spacing: 3px;
+    padding-top: 40px;
+}
+
+#bk{
+    margin-top: 50px;
+    margin-right: 20px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: capitalize;
+    background-color: chocolate;
+    color: black;
+    padding: 10px 20px;
+    border: 5px solid chocolate;
+}
+
+#km{
+    margin-top: 50px;
+    margin-right: 20px;
+    font-family: 'Libre Baskerville', serif;
+    font-weight: bold;
+    font-size: 15px;
+    text-transform: capitalize;
+    background-color: transparent;
+    color: chocolate;
+    padding: 10px 20px;
+    border: 5px solid chocolate;
+}
+
+.footer{
+    width: 100%;
+    height: 10vh;
+    bottom: 0px;
+    /* position: fixed; */
+    text-align: center;
+    font-family: 'Libre Baskerville', serif;
+    background-color: rgba(255, 255, 255, 0.63);
+    line-height: 10vh;
+}

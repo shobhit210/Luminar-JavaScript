@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get country details</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">     
+</head>
+
+<body>
+    <h1 class="main-heading">Get country details from their names</h1>
+    <div class="body1">
+        <p>Enter the name of the country you wish to search for in the box below</p>
+        <input type="text" placeholder="Enter country name" id="countryname"><br>
+        <div class="buttons">
+            <button class="btn1" onclick="fetchCountry()">Fetch </button>
+            <button type="reset" class="btn1" onclick="clearAll()">Clear</button>
+        </div>
+    </div>
+    <section class="result">
+        <div class="cards">
+            <div class="cards__item">
+                <h3>Country Name</h3>
+                <p id="resultname">---</p>
+            </div>
+
+            <div class="cards__item">
+                <h3>Capital</h3>
+                <p id="resultcapital">---</p>
+            </div>
+
+            <div class="cards__item">
+                <h3>Time Zone</h3>
+                <p id="resulttimezone">---</p>
+            </div>
+
+            <div class="cards__item">
+                <h3>Calling Code</h3>
+                <p id="resultcallingcode">---</p>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="cards__item">
+                <h3>Population</h3>
+                <p id="resultpopulation">---</p>
+            </div>
+
+            <div class="cards__item">
+                <h3>Currency Name</h3>
+                <p id="resultcurrency">---</p>
+            </div>
+
+            <div class="cards__item">
+                <h3>Symbol</h3>
+                <p id="resultsymbol">---</p>
+            </div>
+
+            <div class="cards__item">
+                <h3>Language</h3>
+                <p id="resultlanguage">---</p>
+            </div>
+        </div>
+
+        <div class="cards">
+            <div class="cards__item">
+                <h3>Country Flag</h3>
+                <img src="" alt="country flag" id="resultflag">
+            </div>
+        </div>
+    </section>
+    
+</body>
+
+<script src="script.js">
+</script>
+
+</html>

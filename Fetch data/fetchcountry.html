@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Countries</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <input type="text" placeholder="Enter country name" id="country">
+                <button class="btn btn-success" onclick="fetchCountry()">Fetch Country</button>
+            </div>
+            <div class="col-4"></div>
+        </div>
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4 mt-5" id="result"></div>
+            <div class="col-4"></div>
+        </div>
+    </div>
+</body>
+<script>
+    function populate(country){
+        let name = country[0].name;
+        console.log(name);
+        let capital = country[0].capital;
+        console.log(capital);
+        let population = country[0].population;
+        let flag = country[0].flag;
+        let currency_name = country[0].currencies[0].name;
+        let symbol = country[0].currencies[0].symbol;
+
+        let html_data = `<div class="card" style="width: 18rem;">
+  <img src="${flag}" class="card-img-top" alt="country flag">
+  <div class="card-body">
+    <h5 class="card-title"><h3>Country Name:</h3> ${name}</h5>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li class="list-group-item"><h3>Capital:</h3> ${capital}</li>
+    <li class="list-group-item"><h3>Population:</h3> ${population}</li>
+    <li class="list-group-item"><h3>Currency:</h3> ${currency_name}</li>
+    <li class="list-group-item"><h3>Symbol:</h3> ${symbol}</li>
+  </ul>
+  </div>`
+
+result.innerHTML = html_data;
+    }
+
+
+    function fetchCountry(){
+        let country_name = country.value;
+        // alert (country_name);
+        let url = `https://restcountries.eu/rest/v2/name/${country_name}?fullText=true`;
+        fetch(url).then(res=>res.json()).then(data=>populate(data));
+    }
+</script>
+</html>

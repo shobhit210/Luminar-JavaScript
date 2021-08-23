@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Account</title>
+</head>
+<body>
+    <input type="text" id="ac_no" placeholder="Account Number"><br>
+    <input type="text" id="pwd" placeholder="Password"><br>
+    <input type="text" id="bal" placeholder="Balance"><br>
+    <button onclick="createUser()">Submit</button>
+    <button onclick="fetchAllUsers()">List all users</button>
+
+    <div id="resultarea">
+
+    </div>
+</body>
+<script src="script.js">
+
+ 
+
+    // function createUser(){
+    //     let account_number=ac_no.value;
+    //     let password=pwd.value;
+    //     let balance=bal.value;
+
+    //     let user = {
+    //         accountNumber:account_number,
+    //         passWord:password,
+    //         accountBalance:balance
+    //     }
+        
+    //     localStorage.setItem(user.accountNumber,JSON.stringify(user));
+    //     alert("user created");
+    //     location.reload(true);
+    // }
+
+
+    // function fetchAllUsers(){
+    //     let users = [];
+    //     for(let i = 0; i<localStorage.length; i++){
+    //         let key = localStorage.key(i);
+    //         let user = JSON.parse(localStorage.getItem(key))  // To convert JSON string into object
+    //         users.push(user);
+    //     }
+    //     console.log(users);
+
+    // }
+
+</script>
+</html>

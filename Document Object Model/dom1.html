@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Document object model</h1>
+    <h2 id = "uniqueid">Attributes</h2>
+    <ul>
+        <li class = "list">URL</li>
+        <li class = "list">head</li>
+        <li class = "list">Links</li>
+    </ul>
+
+    <h2>h2 heading</h2>
+    <h2>h2 heading</h2>
+    <h2>h2 heading</h2>
+
+    <h3 name="hthree">h3 heading</h3>
+    <h3 name="hthree">h3 heading</h3>
+    <h3 name="hthree">h3 heading</h3>
+
+    <a href="#" class="anchor">one</a>
+    <a href="#" class="anchor">two</a>
+    <a href="#" class="anchor">three</a>
+
+    <script>
+        // // getElementsByTagName("Tagname")
+        // var first = document.getElementsByTagName("h2");
+        // console.log(first);
+        // for(let tag of first){
+        //     tag.style.color = "green";
+        //     tag.style.backgroundColor = "blue";
+        // }
+
+
+
+        // // getElementById("id")
+        // var byid = document.getElementById("uniqueid");
+        // byid.style.backgroundColor="cyan";
+
+
+
+        // // getElementsByClassName("classname")
+        // var byclass = document.getElementsByClassName("list");
+        // for(let tag of byclass){
+        //     tag.style.backgroundColor="yellow" 
+        // }
+
+
+        // // getElementsByName("attributename")
+        // var byname = document.getElementsByName("hthree");
+        // for(let elemt of byname){
+        //     elemt.style.color = "orange";
+        // }
+
+
+
+        // // querySelector("")
+        // var qs = document.querySelector("h2")  //Tagname
+        // var qs = document.querySelector("#uniqueid");  //id
+        // var qs = document.querySelector(".list")  //class
+        // qs.style.color = "purple";
+        
+        // var list1 = document.querySelector("li");
+        // list1.style.color = "blue";
+
+
+
+        // // querySelectorAll("")
+        // var list = document.querySelectorAll("li");
+        // for(let tag of list){
+        // tag.style.color = "green";
+        // }
+
+        // var aclass = document.querySelectorAll(".anchor")
+        // for(let tags of aclass){
+        //     tags.style.color = "orange";
+        //     tags.style.border = "1px solid black";
+        // }
+        
+
+
+        // textContent = "new text"
+        var htwo = document.querySelector("h2");
+        htwo.textContent = "Document Object Method Model";
+        
+        
+        
+        // innerHTML = "<strong>new text</strong>"    // This supports tags as well inside it.
+        // htwo.innerHTML = "<em>New Text Here</em>";
+
+        document.querySelector("h3").innerHTML = "<em>New element</em>";
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body{
+    border: 3px solid green;
+    border-radius: 15px;
+}
+
+.main-heading {
+    text-align: center;
+    margin: 20px 0px;
+    font-size: 35px;
+    color: green;
+    font-weight: bold;
+}
+
+.body1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(117, 221, 117);
+    border: 5px solid green;
+    margin: 20px 20px;
+    border-radius: 15px;
+}
+
+.body1 p {
+    margin: 10px 0px;
+    font-size: 25px;
+    color: green;
+}
+
+#countryname {
+    height: 45px;
+    width: 35%;
+    padding-left: 10px;
+    margin: 25px 0px 15px 0px;
+    border-radius: 10px;
+    font-size: 18px;
+    color: green;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.btn1 {
+    padding: 10px 15px;
+    border-radius: 10px;
+    margin: 5px 10px 20px 10px;
+    width: 13vw;
+    background-color: white;
+    border: 2px solid green;
+    color: green;
+    font-weight: bold;
+}
+
+.btn1:hover {
+    background-color: rgb(117, 221, 117);
+    color: white;
+    cursor: pointer;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 10px;
+}
+
+.cards__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 24%;
+
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    background-color: rgb(117, 221, 117);
+    border: 2px solid green;
+    color: black;
+    border-radius: 15px;
+}
+
+#resultflag{
+    width: 150px;
+    height: 100px;
+}

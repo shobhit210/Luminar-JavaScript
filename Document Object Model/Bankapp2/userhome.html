@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Userhome</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+
+<body>
+    <h1>User Homepage</h1>
+    <h2 id="profile"></h2>
+    <button onclick="displayBalance()">Balance Enquiry</button>
+    <button data-bs-toggle="modal" data-bs-target="#exampleModal">Fund Transfer</button>
+    <button onclick="logout()">Logout</button>
+
+
+    <!-- Modal -->
+    <div class="modal fade modal-dialog modal-dialog-centered" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Account Transfer</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="mt-2">
+                        <input type="text" name="" id="toaccount" class="form-control" placeholder="To account number">
+                    </div>
+                    <div class="mt-2">
+                        <input type="text" name="" id="confirmtoaccount" class="form-control" placeholder="Confirm to account number">
+                    </div>
+                    <div class="mt-2"> 
+                        <input type="text" name="" id="amount" class="form-control" placeholder="Enter amount">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary" onclick="transferFund()">Proceed</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./script.js"></script>
+<!--Use ./ method to link files -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</html>

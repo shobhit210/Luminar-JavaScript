@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booknames Database</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <style>
+        *{
+            box-sizing: border-box;
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        body{
+            background-color: blueviolet;
+        }
+
+        h2{
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 35px;
+            letter-spacing: 5px;
+            color: white;
+        }
+
+        h3{
+            text-align: center;
+            /* text-transform: uppercase; */
+            font-size: 22px;
+            padding-top: 30px;
+            letter-spacing: 3px;
+            color: blueviolet;
+        }
+
+        .container{
+            width: 40vw;
+            height: 75vh;
+            background-color: white;
+            position: relative;
+            margin: auto;
+            border-radius: 20px;
+        }
+
+
+        #bookname, #author, #price, #copies{
+            width: 80%;
+            height: 45px;
+            margin: 13px 52px;
+            border-radius: 20px;
+            padding-left: 20px;
+            border: 2px solid blueviolet;
+        
+        }
+
+        .btn{
+            padding: 15px 30px;
+            font-weight: bold;
+            border-radius: 20px;
+            margin-top: 15px;
+            margin-left: 210px;
+            font-size: 15px;
+            background-color: blueviolet;
+            font-family: 'Montserrat', sans-serif;
+            border: 3px solid blueviolet;
+            color: white;
+            text-transform: uppercase;
+        }
+
+        .btn:hover{
+            border: 3px solid blueviolet;
+            background: transparent;
+            color: blueviolet;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h2>books database</h2>
+    <div class="container">
+        <form action="">
+            <h3>Enter details of the book</h3>
+            <input type="text" id="bookname" placeholder="Enter book name"><br>
+            <input type="text" id="author" placeholder="Enter author name"><br>
+            <input type="text" id="price" placeholder="Enter book price"><br>
+            <input type="text" id="copies" placeholder="Enter number of copies"><br>
+            <button class="btn" onclick="createBook()">Submit</button>
+        </form>
+    </div>
+</body>
+<script src="booknamescript.js"></script>
+</html>
